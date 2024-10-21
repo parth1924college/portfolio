@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parth Chaturvedi - Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="fixed w-full z-10 gradient-bg text-white shadow-lg">
+        <nav class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold">PC</a>
+                <div class="hidden md:flex space-x-4">
+                    <a href="#home" class="hover:text-gray-300 transition duration-300">Home</a>
+                    <a href="#about" class="hover:text-gray-300 transition duration-300">About</a>
+                    <a href="#skills" class="hover:text-gray-300 transition duration-300">Skills</a>
+                    <a href="#projects" class="hover:text-gray-300 transition duration-300">Projects</a>
+                    <a href="#resume" class="hover:text-gray-300 transition duration-300">Resume</a>
+                    <a href="#contact" class="hover:text-gray-300 transition duration-300">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 pt-24">
+        <section id="home" class="min-h-screen flex items-center justify-center">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-4">Parth Chaturvedi</h1>
+                <p class="text-xl text-gray-600 mb-8">Aspiring Software Developer | Web Enthusiast | Data Analyst</p>
+                <a href="#contact" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300">Get in Touch</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+            <div class="bg-white shadow-lg rounded-lg p-8">
+                <p class="text-gray-700 leading-relaxed">
+                    Aspiring professional with a passion for technology and innovation. Strong foundation in software development, eager to apply skills in programming, web development, and data analysis to contribute to impactful projects. Focused on exploring emerging technologies and solving complex problems, while continuously learning and growing in the tech field.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-code text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Programming Languages</h3>
+                    <p>C, JavaScript, Java, Python</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-globe text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p>HTML, CSS, Angular, React, NodeJS</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-database text-4xl text-yellow-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Database Management</h3>
+                    <p>SQL</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-tools text-4xl text-purple-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Tools & Technologies</h3>
+                    <p>Azure, Git</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-brain text-4xl text-red-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Machine Learning</h3>
+                    <p>CNN, ANN</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Deep Learning for Water and Sand Extraction</h3>
+                        <p class="text-gray-600">Implemented CNN and ANN models to extract water and riverine sand from multispectral remote sensing images.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Samsung PRISM Project: Gen AI & Profile Summarization</h3>
+                        <p class="text-gray-600 mb-4">Utilized the Gemini API to implement natural language processing tasks. Applied Gen AI to summarize profiles and extract expertise.</p>
+                        <a href="https://profilesummarization-tool.streamlit.app/" target="_blank" class="text-blue-500 hover:underline">Visit Project</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Stock Price Tracker</h3>
+                        <p class="text-gray-600">Built a stock tracker with React, Firebase, and Finnhub API, featuring authentication, stock options, portfolios, and visualizations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="py-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Resume</h2>
+            <div class="bg-white shadow-lg rounded-lg p-8">
+                <h3 class="text-2xl font-semibold mb-4">Education</h3>
+                <ul class="list-disc list-inside mb-6">
+                    <li>B.E. in Information Science, Cambridge Institute of Technology (Expected 2025)</li>
+                    <li>12th Grade, D.A.V. ACC Public School (2021)</li>
+                    <li>10th Grade, D.A.V. ACC Public School (2019)</li>
+                </ul>
+                <h3 class="text-2xl font-semibold mb-4">Certifications</h3>
+                <ul class="list-disc list-inside">
+                    <li>Cloud Computing and Distributed System, NPTEL</li>
+                    <li>Introduction to Internet of Things, NPTEL</li>
+                    <li>Azure AI Fundamentals, Microsoft</li>
+                    <li>Certificate in Python Programming, Samsung Innovation Campus (SIC)</li>
+                    <li>Natural Language Processing Solution with Azure AI, Microsoft</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20">
+            <h2 class="text-3xl font-bold mb-8 text-center">Contact Me</h2>
+            <div class="bg-white shadow-lg rounded-lg p-8">
+                <div class="flex flex-col md:flex-row justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <p class="flex items-center mb-2"><i class="fas fa-envelope mr-2 text-blue-500"></i> parthcha1924@gmail.com</p>
+                        <p class="flex items-center mb-2"><i class="fas fa-phone mr-2 text-blue-500"></i> 8516077003</p>
+                        <p class="flex items-center">
+                            <i class="fab fa-linkedin mr-2 text-blue-500"></i>
+                            <a href="https://www.linkedin.com/in/parth-chaturvedi-87a1111a1/" target="_blank" class="text-blue-500 hover:underline">LinkedIn Profile</a>
+                        </p>
+                    </div>
+                    <form class="w-full md:w-1/2">
+                        <input type="text" placeholder="Your Name" class="w-full mb-4 p-2 border rounded">
+                        <input type="email" placeholder="Your Email" class="w-full mb-4 p-2 border rounded">
+                        <textarea placeholder="Your Message" class="w-full mb-4 p-2 border rounded" rows="4"></textarea>
+                        <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="gradient-bg text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Parth Chaturvedi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            const navLinks = document.querySelectorAll('nav a');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Mobile menu toggle
+            const menuButton = document.querySelector('button');
+            const mobileMenu = document.querySelector('.md\\:flex');
+
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenu.classList.toggle('flex-col');
+                mobileMenu.classList.toggle('items-center');
+                mobileMenu.classList.toggle('w-full');
+                mobileMenu.classList.toggle('mt-4');
+            });
+        });
+    </script>
+</body>
+</html>
